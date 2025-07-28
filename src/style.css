@@ -1,0 +1,444 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora-VariableFont.ttf");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans-VariableFont.ttf");
+}
+
+:root {
+  /* # COLORS */
+
+  --color-primary: #fff;
+  --color-secondary: #000;
+  --color-tertiary: #aaaaaa;
+
+  /* # FONTS */
+
+  --font-family-primary: "Inter";
+  --font-family-secondary: "WorkSans";
+  --font-family-tertiary: "Lora";
+  --font-size-primary: 16px;
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-primary);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+/* # GENERAL STYLING */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-secondary);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  font-family: var(--font-family-secondary);
+  font-size: 1.3rem;
+  line-height: 1.44rem;
+  letter-spacing: -0.41px;
+  padding: 0.8rem 2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: 1px solid var(--color-tertiary);
+  cursor: pointer;
+}
+
+/* # HEADER */
+
+header {
+  height: 44.25rem;
+  padding: 0 6.85rem;
+}
+
+/* ~ TITLE SECTION */
+
+header .title-section {
+  text-align: center;
+}
+
+header .title-section .intro-wrapper {
+  height: 44.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header .title-section .intro-wrapper > p {
+  font-family: var(--font-family-secondary);
+  font-size: 1.25rem;
+  letter-spacing: -0.5px;
+}
+
+header .title-section .intro-wrapper .title-wrapper {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 80%;
+}
+
+header .title-section .intro-wrapper .title-wrapper p:last-of-type {
+  font-family: var(--font-family-secondary);
+  color: var(--color-secondary);
+  text-shadow: -1px 0 var(--color-primary), 0 1px var(--color-primary), 1px 0 var(--color-primary),
+    0 -1px var(--color-primary);
+}
+
+/* ~ TITLE SUB CONTAINER */
+
+header .title-sub-container {
+  position: relative;
+  top: -6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* # MAIN */
+
+/* ~ STORY SECTION */
+
+main {
+  padding: 1rem 0 0 0;
+}
+
+main .story-section {
+  padding: 6.6rem 0 6.6rem 6.85rem;
+}
+
+main .story-section h1 {
+  width: 80vw;
+  font-size: 6.1rem;
+  font-weight: 700;
+  line-height: 6.8rem;
+  letter-spacing: -2.48px;
+}
+
+main .story-data-article {
+  background: url("../public/img/map.svg") right/contain no-repeat;
+}
+
+main .story-data-article .data-wrapper {
+  padding-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .story-data-article .data-wrapper .data-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+main .story-data-article .data-wrapper .data-item p:first-of-type {
+  font-family: var(--font-family-secondary);
+  font-size: 0.9rem;
+}
+
+main .story-data-article .data-wrapper .data-item p:last-of-type {
+  font-size: 5.4rem;
+  font-weight: 700;
+  line-height: 6.8rem;
+  letter-spacing: -2.48px;
+}
+
+/* ~ ACTION SECTION */
+
+main .action-section {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  height: 118rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* justify-content: center; */
+}
+
+main .action-section .text-container {
+  height: 100%;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: var(--font-family-secondary);
+  line-height: 1.85rem;
+  letter-spacing: -0.41px;
+}
+
+main .action-section .text-container p {
+  width: 26.2rem;
+}
+
+main .action-section .text-container div h2 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  letter-spacing: -1.24px;
+}
+
+main .action-section img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+main .action-section .img-size-s {
+  height: 11.4rem;
+  width: 17.15rem;
+}
+
+main .action-section .img-size-m {
+  height: 13.7rem;
+  width: 20.57rem;
+}
+
+main .action-section .img-size-l {
+  height: 18.28rem;
+  width: 27.43rem;
+}
+
+main .action-section img:nth-of-type(1) {
+  top: -5rem;
+  right: 8rem;
+}
+
+main .action-section img:nth-of-type(2) {
+  top: 13rem;
+  left: 4rem;
+}
+
+main .action-section img:nth-of-type(3) {
+  top: 38rem;
+  right: 0;
+}
+
+main .action-section img:nth-of-type(4) {
+  top: 51rem;
+  left: 16rem;
+}
+
+main .action-section img:nth-of-type(5) {
+  top: 63rem;
+  right: 12rem;
+}
+
+main .action-section img:nth-of-type(6) {
+  top: 84rem;
+  left: 0;
+}
+
+main .action-section img:nth-of-type(7) {
+  top: 103rem;
+  right: 15rem;
+}
+
+/* ~ GOLDENBEAR SECTION */
+
+main .bear-section {
+  padding: 10.4rem 6.85rem 0 6.85rem;
+}
+
+main .bear-section .bear-description-article p {
+  font-family: var(--font-family-secondary);
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  letter-spacing: -0.41px;
+}
+
+main .bear-section .bear-description-article .bear-text-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .bear-section .bear-description-article .bear-text-container h2 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  width: 30%;
+}
+
+main .bear-section .bear-description-article .bear-text-container div {
+  width: 50%;
+}
+
+main .bear-section .bear-description-article .bear-text-container div p:first-of-type {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -0.41px;
+}
+
+main .bear-section .bear-description-article .bear-text-container div p:last-of-type {
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  letter-spacing: -0.41px;
+}
+
+main .bear-section .bear-images-article {
+  position: relative;
+  height: 45.7rem;
+}
+
+main .bear-section .bear-images-article img {
+  position: absolute;
+  z-index: 1;
+}
+
+main .bear-section .bear-images-article img:first-of-type {
+  height: 45.7rem;
+  top: 10.5rem;
+}
+
+main .bear-section .bear-images-article img:last-of-type {
+  height: 29.6rem;
+  top: 20rem;
+  right: 5rem;
+}
+
+/* ~ CIRCLE SECTION */
+
+main .circle-section {
+  background-color: var(--color-primary);
+  height: 25.7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+main .circle-section img {
+  height: 100%;
+  position: absolute;
+  top: -7rem;
+  right: -9rem;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ~ ROSEBEAR SECTION */
+
+main .rosebear-section {
+  padding-top: 0;
+  padding-bottom: 10rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+main .bear-section .bear-images-article img:first-of-type {
+  height: 29.6rem;
+  top: 15rem;
+  left: 5rem;
+  z-index: 2;
+}
+
+main .bear-section .bear-images-article img:last-of-type {
+  height: 45.7rem;
+  top: 7rem;
+  right: 0;
+}
+
+/* ~ FOOTER */
+
+footer {
+  max-height: 38.25rem;
+  padding: 5.75rem 0 2rem 6.85rem;
+  overflow: hidden;
+}
+
+footer div {
+  width: 40%;
+}
+
+footer div p:first-of-type {
+  font-family: var(--font-family-secondary);
+  font-size: 0.75rem;
+}
+
+footer div p:last-of-type {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.88rem;
+}
+
+footer .contact-section {
+  margin-top: 5rem;
+}
+
+footer .contact-section .social-media-article {
+  height: 1.2rem;
+}
+
+footer .contact-section .social-media-article img {
+  height: 100%;
+}
+
+footer .contact-section p {
+  font-family: var(--font-family-secondary);
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+
+footer .date-banner {
+  padding: 1rem 0;
+  width: fit-content;
+  transform: rotate(45deg) translateY(-2rem);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+footer .date-banner p {
+  white-space: nowrap;
+  transform: translateX(14%);
+  animation: bannerAnimation 5s linear infinite alternate;
+}
+
+footer .date-banner p span {
+  font-family: var(--font-family-tertiary);
+  font-size: 5.5rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+}
+
+footer .date-banner p .date-banner-year {
+  color: var(--color-primary);
+  text-shadow: -1px 0 var(--color-secondary), 0 1px var(--color-secondary), 1px 0 var(--color-secondary),
+    0 -1px var(--color-secondary);
+}
+
+@keyframes bannerAnimation {
+  100% {
+    transform: translateX(-50%);
+  }
+}
